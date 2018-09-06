@@ -31,6 +31,25 @@
     }
 }
 
+.StickyHeader {
+    .SiteUsps,
+    .SiteLogo,
+    .TeamNav,
+    .ServiceNav,
+    .QuickLink--1 {
+        display: none !important; // stylelint-disable-line
+    }
+}
+
+.StickyHeader .SiteHeader {
+    position: fixed;
+    top: -20em;
+    left: 0;
+    right: 0;
+    transition-duration: 0.5s;
+    transform: translateY(20em);
+}
+
 .nav-wrap {
     position: relative;
     height: 8.46em;
